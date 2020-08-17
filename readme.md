@@ -30,7 +30,7 @@ http://192.168.38.2:9500/insert/4797d2b1e24612178b624c68afb979bd
 ```
 
 ## Respon status
-Setelah request data akan mendapatkan respon feedback.
+Setelah request data akan mendapatkan respon feedback.\
 **Struktur Data** 
 ```json
 {
