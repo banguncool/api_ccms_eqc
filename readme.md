@@ -22,11 +22,11 @@ Hasil: 4797d2b1e24612178b624c68afb979bd
 IP akan berbeda beda disetiap tempat
 Format URL sebagai berikut
 ```sh
-http://[hostname]:[port]/[perintah]/[token]
+http://[hostname]:[port]/eqc/[perintah]/[token]
 ```
 Contoh:
 ```sh
-http://192.168.38.2:9500/insert/4797d2b1e24612178b624c68afb979bd
+http://192.168.38.2:9500/eqc/insert/4797d2b1e24612178b624c68afb979bd
 ```
 
 ## Respon status
