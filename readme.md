@@ -248,7 +248,7 @@ Keterangan:
 - shift (int) => shift produksi
 - start (timestamp) => waktu start uji tekan
 - stop (timestamp) => waktu stop uji tekan
-- actual_mix_class (int) => aktual slum (input uji tekan)
+- actual_mix_class (float) => aktual slum (input uji tekan)
 - actual_day (int) => target hari untuk test (input uji tekan)
 - type (string) => tipe benda uji "Silinder" atau "Kubus"
 - name (string) => nama tipe benda uji (input uji tekan)
