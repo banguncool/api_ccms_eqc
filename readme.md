@@ -87,33 +87,55 @@ Mix Design adalah parameter dari Batching Plant, ketika diinput secara ototmatis
 ```json
 {
   "track": 1,
-  "data": [
-    {
-      "name": "Semen",
-      "code": "1234",
-      "target": 1234,
-      "density": 12.34
-    },
-    {
-      "name": "Fly Ash",
-      "code": "5678",
-      "target": 5678,
-      "density": 56.78
-    },
-    {
-      ...   // dan seterusnya
-    }
-  ]
+  "data": [{
+    "mix_code": "K600NFAGN",
+    "mix_design": "k-600",
+    "mix_class": "Tiang Pancang",
+    "load": 862,
+    "density": 2425,
+    "wc_ratio": 0.4,
+    "slump": 12,
+    "target": [
+      {
+        "name": "Semen",
+        "code": "1234",
+        "target": 1234,
+        "density": 12.34
+      },
+      {
+        "name": "Fly Ash",
+        "code": "5678",
+        "target": 5678,
+        "density": 56.78
+      },
+      {
+          // dan seterusnya
+      }
+    ]
+  },
+  {
+    // dan seterusnya
+  }]
 }
 ```
 
 Keterangan:
+- mix_code (string) => kode mix
+- mix_design (string) => target mix_design
+- mix_class (string) => Nama spesifik mix_design
+- load (int) => kuat tekan untuk target uji tekan dalam (kN)
+- data -> density (int) => berat jenis per material 
+- wc_ratio (float) => pebandingan target air dibagi target semen
+- slump (int) => keenceran beton dalam (cm)
 - track (number) => Jalur mana yang akan diubah parameternya
 - data (array object) => data dari parameter
 - name (string) => nama material
 - code (string) => kode sumber daya
 - target (int) => target (kg) material dalam 1 m³
-- density (float) => berat jenis
+- target -> density (float) => berat jenis
+
+Catatan:
+- Field data adalah target semua mix yang nanti jadi pilihan operator Batching Plant
 
 **Respon**
 ```json
