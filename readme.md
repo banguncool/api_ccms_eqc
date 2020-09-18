@@ -120,6 +120,7 @@ Mix Design adalah parameter dari Batching Plant, ketika diinput secara ototmatis
 ```
 
 Keterangan:
+- track (int) => jalur
 - mix_code (string) => kode mix
 - mix_design (string) => target mix_design
 - mix_class (string) => Nama spesifik mix_design
