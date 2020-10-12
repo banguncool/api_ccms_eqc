@@ -97,12 +97,14 @@ Mix Design adalah parameter dari Batching Plant, ketika diinput secara ototmatis
     "slump": 12,
     "target": [
       {
+        "category": "Cement",
         "name": "Semen",
         "code": "1234",
         "target": 1234,
         "density": 12.34
       },
       {
+        "category": "Flay-Ash",
         "name": "Fly Ash",
         "code": "5678",
         "target": 5678,
@@ -130,6 +132,7 @@ Keterangan:
 - slump (int) => keenceran beton dalam (cm)
 - track (number) => Jalur mana yang akan diubah parameternya
 - data (array object) => data dari parameter
+- category (string) => kategori dari material (sub dari nama material)
 - name (string) => nama material
 - code (string) => kode sumber daya
 - target (int) => target (kg) material dalam 1 m³
